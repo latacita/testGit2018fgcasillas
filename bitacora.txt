@@ -52,3 +52,15 @@
         editar bitacora.txt
         add bitacora.txt
         commit
+28      add bitacora.txt
+        commit -m "Paso 28"
+29      tag Step29
+30      push                                Se me olvidó desmarcar la casilla de "Push all tags"
+                                            por lo que se subió el tag y aunque luego lo borré en el local
+                                            y lo volví a subir (force push) la etiqueta seguía en el repositorio
+                                            remoto. Pero bueno, este paso correctamente sería simplemente hacer
+                                            un push desmarcando la casilla de "Push all tags" o en git, hacer Push
+                                            normal y después NO haciendo push de los tags.
+31      checkout feature/Ticket222
+32      reset to commit                     Estando en la rama feature, vemos el archivo de develop (sin cambiar de rama)
+                                            y click drecho, seleccionamos la opción: "Reset to commit" y le damos a OK.
