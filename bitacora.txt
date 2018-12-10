@@ -16,3 +16,6 @@
 06      branch develop
 07      branch feature/Ticket220      Desde develop
         checkout feature/Ticket220
+13      add
+        stash
+        checkout feature/Ticket220
