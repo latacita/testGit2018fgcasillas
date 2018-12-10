@@ -11,14 +11,23 @@
 03      add bitacora.txt
         commit -m "Introducción de nombre y apellidos."
         push
+
 05      add bitacora.txt
         commit -m "Paso 05"
 06      branch develop
 07      branch feature/Ticket220      Desde develop
         checkout feature/Ticket220
+09      add bitacora.txt
+        commit -m "Paso 09"
+10      checkout develop
+11      branch feature/Ticket221
+        checkout feature/Ticket221
 13      add
         stash
         checkout feature/Ticket220
+15      add bitacora.txt
+        commit -m "Paso 15"
+16      checkout feature/Ticket221
 17      stash apply
         editar bitacora.txt
 18      add bitacora.txt
