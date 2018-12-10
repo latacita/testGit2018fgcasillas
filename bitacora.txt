@@ -9,5 +9,58 @@
 01      clone
 02      editar bitacora.txt
 03      add bitacora.txt
+        commit -m "Introducción de nombre y apellidos."
+        push
+
+05      add bitacora.txt
+        commit -m "Paso 05"
+06      branch develop
+07      branch feature/Ticket220      Desde develop
+        checkout feature/Ticket220
+09      add bitacora.txt
+        commit -m "Paso 09"
+10      checkout develop
+11      branch feature/Ticket221
+        checkout feature/Ticket221
+13      add
+        stash
+        checkout feature/Ticket220
+15      add bitacora.txt
+        commit -m "Paso 15"
+16      checkout feature/Ticket221
+17      stash apply
+        editar bitacora.txt
+18      add bitacora.txt
+        commit -m "Paso 18"
+19      checkout develop
+20      branch feature/Ticket222
+21      checkout feature/Ticket220
+22                                    Se haría por fast-forward ya que el HEAD
+                                de develop es el antepasado de la rama feature, ya
+                                que develop no se ha modificado después de la creación
+                                de la rama, por lo que no se genera un nuevo commit y
+                                en vez de ello el HEAD de develop se actualiza al HEAD
+                                de la rama feature.
+
+23      add bitacora.txt
+        commit -m "Paso 23"
+24      checkout develop
+25      merge feature/Ticket220             Estando en develop
+                                            Fusión recursiva sin conflictos
+26      merge feature/Ticket221             Estando en develop
+                                            Fusión recursiva con conflictos
+        editar bitacora.txt
+        add bitacora.txt
         commit
-        push    
+28      add bitacora.txt
+        commit -m "Paso 28"
+29      tag Step29
+30      push                                Se me olvidó desmarcar la casilla de "Push all tags"
+                                            por lo que se subió el tag y aunque luego lo borré en el local
+                                            y lo volví a subir (force push) la etiqueta seguía en el repositorio
+                                            remoto. Pero bueno, este paso correctamente sería simplemente hacer
+                                            un push desmarcando la casilla de "Push all tags" o en git, hacer Push
+                                            normal y después NO haciendo push de los tags.
+31      checkout feature/Ticket222
+32      reset to commit                     Estando en la rama feature, vemos el archivo de develop (sin cambiar de rama)
+                                            y click drecho, seleccionamos la opción: "Reset to commit" y le damos a OK.
