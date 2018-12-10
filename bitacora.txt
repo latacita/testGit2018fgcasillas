@@ -64,3 +64,13 @@
 31      checkout feature/Ticket222
 32      reset to commit                     Estando en la rama feature, vemos el archivo de develop (sin cambiar de rama)
                                             y click drecho, seleccionamos la opción: "Reset to commit" y le damos a OK.
+34      add bitacora.txt
+        commit -m "Paso 34"
+35      merge feature/Ticket222             Estando en develop
+                                            Fusión recursiva sin conflictos
+36      merge develop                       Estando en master
+                                            Fusión recursiva con conflictos, aunque era por el final de documento.
+        editar bitacora.txt
+        add bitacora.txt
+        commit
+37      editar bitacora.txt
