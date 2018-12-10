@@ -41,3 +41,14 @@
                                 de la rama, por lo que no se genera un nuevo commit y
                                 en vez de ello el HEAD de develop se actualiza al HEAD
                                 de la rama feature.
+
+23      add bitacora.txt
+        commit -m "Paso 23"
+24      checkout develop
+25      merge feature/Ticket220             Estando en develop
+                                            Fusión recursiva sin conflictos
+26      merge feature/Ticket221             Estando en develop
+                                            Fusión recursiva con conflictos
+        editar bitacora.txt
+        add bitacora.txt
+        commit
