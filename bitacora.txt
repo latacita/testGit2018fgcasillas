@@ -9,5 +9,10 @@
 01      clone
 02      editar bitacora.txt
 03      add bitacora.txt
-        commit
-        push    
+        commit -m "Introducción de nombre y apellidos."
+        push
+05      add bitacora.txt
+        commit -m "Paso 05"
+06      branch develop
+07      branch feature/Ticket220      Desde develop
+        checkout feature/Ticket220
